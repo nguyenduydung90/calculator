@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h1>Calculator</h1>
+    <input id="first-num" type="text">
+    <input id="second-num" type="text">
+    <table>
+        <tr>
+            <td>
+                <button type="button" onclick="onclick1()"> Addition(+)</button>
+            </td>
+            <td>
+                <button type="button" onclick="onclick2()">Subtraction(-)
+                </button></td>
+            <td>
+                <button type="button" onclick="onclick3()">Mutiplication(x)</button>
+            </td>
+            <td>
+                <button type="button" onclick="onclick4()">Division(/)</button>
+            </td>
+        </tr>
+        
+    </table>
+    <p id="resull">Resul Division:</p>
+    <script>
+
+        function onclick1(){
+            let x= document.getElementById('first-num').value;
+            let y= document.getElementById('second-num').value;
+                let plus= x + y
+            document.getElementById('resull').innerHTML = 'Result Division: '+ plus
+        }
+        function onclick2(){
+            let x=  document.getElementById('first-num').value;
+            let y= document.getElementById('second-num').value;
+       let sub= x - y
+            document.getElementById('resull').innerHTML = 'Result Division: ' + sub
+        }
+        function onclick3(){
+            let x=  document.getElementById('first-num').value;
+            let y= document.getElementById('second-num').value;
+            let Multi= x*y
+            document.getElementById('resull').innerHTML = 'Result Division: ' + Multi
+        }
+        function onclick4(){
+            let x=  document.getElementById('first-num').value;
+            let y= document.getElementById('second-num').value;
+            let Divi= x/y
+            document.getElementById('resull').innerHTML = 'Result Division: ' + Divi
+        }
+    </script>
+</form>
+</body>
+</html>
